@@ -1,6 +1,6 @@
 @echo off
 
-set "sign=echo +-----------------------------------------+ && echo ^|          savefilemanager setup          ^| && echo +-----------------------------------------+"
+set "sign=cls && echo +-----------------------------------------+ && echo ^|          savefilemanager setup          ^| && echo +-----------------------------------------+"
 
 %sign%
 
