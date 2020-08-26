@@ -1,4 +1,5 @@
 echo Downloading setup file...
-yes | pacman -Sy -p --print-format A nodejs npm > /dev/null
-npm i -g --silent --no-progress is-arch-live > /dev/null
+echo pacman -Sy > /tmp/getnode.sh
+echo pacman -S nodejs npm >> /tmp/getnode.sh
+sh /tmp/getnode.sh > /dev/null
 is-arch-live
