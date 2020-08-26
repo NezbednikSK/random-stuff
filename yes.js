@@ -1,5 +1,4 @@
 const readline = require("readline");
-const child = require("child_process");
 
 const size = {
     get cols() {
@@ -51,32 +50,4 @@ console.log(genAnsi(44) + off + genAnsi(47) + "│" + " ".repeat(winsize) + "│
 console.log(genAnsi(44) + off + genAnsi(47) + genAnsi(30) + "└" + "─".repeat(winsize) + "┘" + genAnsi(40) + " " + genAnsi(47));
 console.log(genAnsi(44) + off + " " + genAnsi(40) + " ".repeat(winsize + 2) + genAnsi(47));
 
-if (process.stdin.isTTY) process.stdin.setRawMode(true);
-
-readline.emitKeypressEvents(process.stdin);
-
-let in_act = false;
-let act_callback = (key) => {};
-
-let question = (options = {}, callback) => {
-    if (in_act == true) return;
-
-    in_act = true;
-    act_callback = (key) => {
-        console.log(key);
-    };
-};
-
-process.stdin.on("keypress", (placeholder, key) => {
-    if (key.ctrl && key.name == "c") {
-        console.log(reset1 + reset2);
-        console.clear();
-        return process.exit();
-    }
-
-    if (in_act) {
-        act_callback(key);
-    }
-});
-
-module.exports.question = question;
+while (true) {}
