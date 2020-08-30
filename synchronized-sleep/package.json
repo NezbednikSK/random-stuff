@@ -1,0 +1,39 @@
+{
+  "_from": "synchronized-sleep",
+  "_id": "synchronized-sleep@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-W+JdrbYX3IZPdGEWl141CAlLxq1So3uSLMZbfquaBJT9+yPsMyMPocui/rFZumrSdaGfeiNjrZxDQ4lEYWwQaQ==",
+  "_location": "/synchronized-sleep",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "synchronized-sleep",
+    "name": "synchronized-sleep",
+    "escapedName": "synchronized-sleep",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/synchronized-sleep/-/synchronized-sleep-1.0.0.tgz",
+  "_shasum": "9e6117aa7459e0af9ba966098e4d97fb9964a706",
+  "_spec": "synchronized-sleep",
+  "_where": "/home/nezbednik/Desktop/New Folder",
+  "author": {
+    "name": "Nezbednik"
+  },
+  "bin": {
+    "synchronized-sleep": "sleep.js"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "synchronized sleep for node.js",
+  "license": "WTFPL",
+  "main": "index.js",
+  "name": "synchronized-sleep",
+  "version": "1.0.0"
+}

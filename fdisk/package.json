@@ -1,0 +1,8 @@
+{
+  "name": "fdisk",
+  "version": "1.0.1",
+  "description": "fdisk api for node.js",
+  "main": "index.js",
+  "author": "Nezbednik",
+  "license": "WTFPL"
+}

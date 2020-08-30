@@ -1,0 +1,39 @@
+{
+  "_from": "get-port-pure",
+  "_id": "get-port-pure@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-wwlpcxl+oQjv4YmyfWXLjAIYy1efPB4ZWdUWxHMm1iy7yNrAFIYQqMkOKeJ3cYBZOCP1SKsM23NTb1VnBBf+oA==",
+  "_location": "/get-port-pure",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "get-port-pure",
+    "name": "get-port-pure",
+    "escapedName": "get-port-pure",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/get-port-pure/-/get-port-pure-1.0.1.tgz",
+  "_shasum": "9e5f14c711fefd5fc0f695a066b918e04e3ad4b3",
+  "_spec": "get-port-pure",
+  "_where": "/home/nezbednik/Desktop/New Folder",
+  "author": {
+    "name": "Nezbednik"
+  },
+  "bin": {
+    "get-port-pure": "index.js"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "gets a free port in pure js (sync)",
+  "license": "WTFPL",
+  "main": "index.js",
+  "name": "get-port-pure",
+  "version": "1.0.1"
+}

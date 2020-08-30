@@ -1,0 +1,39 @@
+{
+  "_from": "is-arch-live",
+  "_id": "is-arch-live@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-WlqewI6mdt/8ISbuCyP//Uc9AaG5r9TmrKPHAcqCpa2NYUP2ER2Efc33Gr/oxTZcQbGbzyZbO7LfBev3eDJabw==",
+  "_location": "/is-arch-live",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "is-arch-live",
+    "name": "is-arch-live",
+    "escapedName": "is-arch-live",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/is-arch-live/-/is-arch-live-1.0.3.tgz",
+  "_shasum": "786a0bb781493e0124d7b00985be511c778d690c",
+  "_spec": "is-arch-live",
+  "_where": "/home/nezbednik/Desktop/New Folder",
+  "author": {
+    "name": "Nezbednik"
+  },
+  "bin": {
+    "is-arch-live": "index.js"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "determines if the user is running a live Arch Linux media",
+  "license": "WTFPL",
+  "main": "index.js",
+  "name": "is-arch-live",
+  "version": "1.0.3"
+}
