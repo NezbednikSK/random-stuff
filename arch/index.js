@@ -1,22 +1,4 @@
-const fdisk = {
-    listDisks: () => {
-        return ["/dev/sda"]
-    },
-    listDiskPartitions: (disk) => {
-        if (disk == "/dev/sda") return ["/dev/sda1"]
-    },
-    getPartitionInfo: (partition) => {
-        if (partition == "/dev/sda1") return {
-            "device": "/dev/sda1",
-            "bootstart": "2048",
-            "bootend": "206847",
-            "sectors": "204800",
-            "size": "100M",
-            "id": "7",
-            "type": "HPFS/NTFS/exFAT"
-        }
-    }
-};
+const fdisk = require("fdisk");
 const readline = require("readline");
 const select_a_thingie = require("select-a-thingie");
 
