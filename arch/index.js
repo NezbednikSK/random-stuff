@@ -26,9 +26,14 @@ const startingPage = () => {
 
 const selectPartition = () => {
     let partitions = [];
-    console.log(fdisk.listDisks());
 
-    //console.log(partitions);
+    fdisk.listDisks().filter(i => i.startsWith("/dev/sd")).forEach(disk => {
+        fdisk.listDiskPartitions(disk).forEach(part => {
+            partitions.push(fdisk.getPartitionInfo(part));
+        });
+    });
+    
+    console.log(partitions);
     process.exit();
 
     let sel = [];
