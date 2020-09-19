@@ -1,33 +1,8 @@
-const fdisk = {
-    listDisks: () => {
-        return ["/dev/sda"]
-    },
-    listDiskPartitions: (disk) => {
-        if (disk == "/dev/sda") return ["/dev/sda1"]
-    },
-    getPartitionInfo: (partition) => {
-        if (partition == "/dev/sda1") return {
-            "device": "/dev/sda1",
-            "bootstart": "2048",
-            "bootend": "206847",
-            "sectors": "204800",
-            "size": "100M",
-            "id": "7",
-            "type": "HPFS/NTFS/exFAT"
-        }
-    }
-};
+const fdisk = require("fdisk");
 const readline = require("readline");
 const select_a_thingie = require("select-a-thingie");
 
 let partition = "";
-
-const waitForEnter = (message, callback) => {
-    process.stdout.write(message);
-    new readline.Interface(process.stdin).question("", (a) => {
-        callback();
-    });
-};
 
 const longestItem = (array) => {
     let longest = 0;
@@ -39,13 +14,14 @@ const longestItem = (array) => {
 
 const startingPage = () => {
     console.clear();
-    waitForEnter([
+    process.stdout.write([
         "Welcome to the archlinux installer!",
         "",
         "Press enter to continue the setup..."
-    ].join("\n"), () => {
+    ].join("\n"));
+    setTimeout(() => {
         selectPartition();
-    });
+    }, 15 * 1000);
 };
 
 const selectPartition = () => {
