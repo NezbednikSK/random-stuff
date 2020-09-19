@@ -4,16 +4,6 @@ const select_a_thingie = require("select-a-thingie");
 
 let partition = "";
 
-const waitForEnter = (message, callback) => {
-    process.stdout.write(message);
-    readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    }).input.on("data", () => {
-        callback();
-    });
-};
-
 const longestItem = (array) => {
     let longest = 0;
     array.forEach(item => {
@@ -24,13 +14,14 @@ const longestItem = (array) => {
 
 const startingPage = () => {
     console.clear();
-    waitForEnter([
+    process.stdout.write([
         "Welcome to the archlinux installer!",
         "",
         "Press enter to continue the setup..."
-    ].join("\n"), () => {
+    ].join("\n"));
+    setTimeout(() => {
         selectPartition();
-    });
+    }, 15 * 1000);
 };
 
 const selectPartition = () => {
