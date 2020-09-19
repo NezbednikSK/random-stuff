@@ -6,7 +6,10 @@ let partition = "";
 
 const waitForEnter = (message, callback) => {
     process.stdout.write(message);
-    new readline.Interface(process.stdin).question("", (a) => {
+    readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    }).input.on("data", () => {
         callback();
     });
 };
