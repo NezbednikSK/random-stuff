@@ -32,9 +32,6 @@ const selectPartition = () => {
             partitions.push(fdisk.getPartitionInfo(part));
         });
     });
-    
-    console.log(partitions);
-    process.exit();
 
     let sel = [];
 
