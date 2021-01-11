@@ -1,4 +1,11 @@
 const fs = require("fs");
+
+if (process.argv.includes("--help") || process.argv.includes("-h")) {
+	console.log("Usage: node index.js --input <file> --output <file>");
+	console.log("Add --debug for debugging purposes");
+	process.exit(0);
+}
+
 var findex = process.argv.indexOf("--input");
 if (findex == -1) findex = process.argv.indexOf("-i");
 var fname = "input.len";
